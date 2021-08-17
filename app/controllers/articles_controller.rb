@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
 
-  def index
+  def index #index.html.erb
     @articles = Article.all
   end
 
