@@ -13,10 +13,10 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new
+    @article = Article.new(article_params)
 
-    @article.name = params[:name]
-    @article.body = params[:body]
+    # @article.name = params[:name] <--- mawawala na since naka declare na sa article_params
+    # @article.body = params[:body] ,,-- dapat name and vody nasa form
     if @article.save
       redirect_to articles_path
     else
@@ -35,4 +35,9 @@ class ArticlesController < ApplicationController
   def delete
   
   end
+
+  private
+    def article_params
+      params.require(:article).permit(:name, :body)
+    end
 end
