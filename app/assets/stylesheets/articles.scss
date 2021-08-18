@@ -21,17 +21,35 @@ body {
 }
 
 .main_banner {
-  height: 5vh;
-  margin-bottom: 20px;
-  color: black;
-  font:150% $fontH;
-  text-shadow: 3px 3px 5px #928b7f;
+      display: flex;
+    height: 5vh;
+    margin-bottom: 20px;
+    color: black;
+    font: 150% "Poppins", sans-serif;
+    text-shadow: 3px 3px 5px #928b7f;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
+
+  .new_article {
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    color: black;
+    font: 90% $fontT;
+    text-decoration: none;
+    background-color: antiquewhite;
+  }
 
 .main_container {
   width: 90vw;
   height: auto;
   margin: 0 auto;
+  overflow-y: scroll;
 }
 
   .header {
@@ -65,7 +83,8 @@ body {
   }
 
 
-  .edit_button, .delete_button, .new_article {
+  .edit_button, .delete_button {
+    margin-top: -100px;
     color: black;
     font: 100% $fontT;
     text-decoration: none;
