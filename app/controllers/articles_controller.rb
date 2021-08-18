@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article = Article.find(params[ :id])
+    @article = Article.find(params[:id])
     if @article.update(article_params)
       redirect_to articles_path
     else
@@ -41,12 +41,12 @@ class ArticlesController < ApplicationController
   end
 
   def delete
-    @article = Article.find(params[ :id])
-    if @article.update(article_params)
+    @article = Article.find(params[:id])
+    if @article.destroy
       redirect_to articles_path
-    else
+     else
       render :index
-    end  
+     end
   end
 
   private
