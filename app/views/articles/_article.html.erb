@@ -1,11 +1,16 @@
-<div>
-  ID: <%= article.id %>
-</div>
+<div class = "show_container">
+  <div class = "show_id_container">
+    ID: <%= article.id %>
+  </div>
 
-<div>
-  Title: <%= article.name %>
-</div>
+  <div class = "show_name_container">
+    Title: <%= article.name %>
+  </div>
 
-<div>
-  Lyrics: <%= article.body %>
+  <div class = "show_body_container">
+    Lyrics: <%= article.body %>
+  </div>
+</div>
+<div class = "back_button">
+  <td><%= link_to "Back", articles_path %></td>
 </div>

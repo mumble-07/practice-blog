@@ -46,48 +46,102 @@ body {
   }
 
 .main_container {
-  width: 90vw;
-  height: auto;
+  width: 80vw;
+  height: 80vh;
   margin: 0 auto;
-  overflow-y: scroll;
+  overflow-y:scroll;
 }
 
   .header {
-    width: 80vw;
-    height: 90vh;
     padding-top: 5vh;
-    display: flex;
-    flex-direction: column;
     color: black;
+      
     th {
-      font-size: 250%;
-      font: 250% $fontT;
+      text-align: left;
+      font: 200% $fontT;
       text-shadow: 3px 3px 5px #928b7f;
     }
   }
 
+  .label_box {
+     display: flex;
+    width: 50vw;
+    height: 10vh;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    }
+
+  .buttons {
+    color: black;
+    font: 100% $fontT;
+    text-decoration: none;
+  }
+
   .id_container {
+    padding-top: 3vh;
     width: 5vw;
-    font: 30px $fontQ;
+    font: 25px $fontQ;
   
   }
 
   .name_container {
+    padding-top: 5vh;
     width: 15vw;
-    font: 30px $fontQ;
+    font: 25px $fontQ;
   }
 
   .body_container {
     width: 50vw;
+    height: 50px;
     font: 15px $fontQ;
   }
 
+  .show_container {
+    padding-top: 10vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+  }
 
-  .edit_button, .delete_button {
-    margin-top: -100px;
+    .show_id_container {
+    width: 10vw;
+    font: 30px $fontQ;
+  
+  }
+
+  .show_name_container {
+    width: 15vw;
+    font: 30px $fontQ;
+  }
+
+  .show_body_container {
+    width: 60vw;
+    height: 80vh;
+    font: 20px $fontQ;
+  }
+
+  .back_button {
+    margin-top: -150px;
+    margin-left: 45vw;
     color: black;
     font: 100% $fontT;
-    text-decoration: none;
+    td {
+    text-decoration: none!important;
+    cursor: pointer;
+    }
+  }
+
+  .edit_button, 
+  .delete_button, 
+  .show_button {
+    color: black;
+    font: 100% $fontT;
+    td {
+    text-decoration: none!important;
+    cursor: pointer;
+    }
   }
 
   .form_title {
@@ -117,11 +171,11 @@ body {
     text-align: center;
   }
 
-  .validation_error {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
+  .validation_error li {
+    text-decoration: none!important;
+    width: 50vw;
+    font: 20px $fontH;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
   }

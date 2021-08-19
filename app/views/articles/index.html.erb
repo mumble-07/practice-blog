@@ -1,7 +1,7 @@
 <div class = "main_banner">
-  <h1>Songs e-book</h1>
+  <h1>The Lyric e-book</h1>
   <div class = "new_article">
-      <%= link_to "Create New Article", articles_new_path %>
+      <%= link_to "Add new Lyrics", articles_new_path %>
   </div>
 </div>
 
@@ -12,23 +12,26 @@
       <tr>
         <th>ID</th>
         <th>Title</th>
-        <th>Lyrics</th>
+       <%#  <th>Lyrics</th> %>
       </tr>
     </thead>
     <tbody>
+    <div>
       <%@articles.each do |article| %>
-      <tr>
+      <tr class = "label_box">
         <td class = "id_container"><%= article.id %></td>
         <td class = "name_container"><%= article.name %></td>
-        <td class = "body_container"><%= article.body %></td>
-      </tr>
+        <!--<td class = "body_container"><%= article.body %></td>-->
+        <div class = "buttons">
         <td class = "edit_button"><%= link_to "Edit", article_edit_path(article.id) %></td>
         <td class = "delete_button"><%= link_to "Delete", article_delete_path(article), method: :delete %></td>
         <td class = "show_button"><%= link_to "Show", article_show_path(article)%></td>
+      </div>
+      </tr>
+      
       <%end%>
     </tbody>
   </table>
-    
   </div>
 <div>
 
