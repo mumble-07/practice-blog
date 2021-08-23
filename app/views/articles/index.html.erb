@@ -24,7 +24,7 @@
         <!--<td class = "body_container"><%= article.body %></td>-->
         <div class = "buttons">
         <td class = "edit_button"><%= link_to "Edit", article_edit_path(article.id) %></td>
-        <td class = "delete_button"><%= link_to "Delete", article_delete_path(article), method: :delete %></td>
+        <td class = "delete_button"><%= link_to "Delete", article_delete_path(article.id), method: :delete %></td>
         <td class = "show_button"><%= link_to "Show", article_show_path(article)%></td>
       </div>
       </tr>
