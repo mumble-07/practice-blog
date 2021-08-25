@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get '/articles/:id/edit' => 'articles#edit', as: 'article_edit'
   put '/articles/:id' => 'articles#update', as: 'article_update'
   post '/articles' => 'articles#create', as: 'article_create'
+
+  get '/users' => 'users#index'
+  get '/users/new' => 'users#new', as: 'new_user'
+  post '/users' => 'users#create', as: 'create_user'
 end
 
 

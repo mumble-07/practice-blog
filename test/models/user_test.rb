@@ -11,6 +11,6 @@ class UserTest < ActiveSupport::TestCase
     age = 4
     gender = 'Female'
 
-    assert_not user.save
+    assert_not user.save, "Saved the user without a first_name"
   end
 end
