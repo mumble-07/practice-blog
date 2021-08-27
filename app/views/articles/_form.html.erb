@@ -1,4 +1,4 @@
-<%= form_with scope: :article, url: article_create_path, locale: true do |f| %>
+<%= form_with scope: :article, model: @article, locale: true do |f| %>
 <div class = "validation_error">
   <% if @article.errors.any? %>
     <ul>
