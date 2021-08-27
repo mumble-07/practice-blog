@@ -12,9 +12,12 @@ Rails.application.routes.draw do
   # post '/articles' => 'articles#create', as: 'article_create'
   ########========CONVERT TOU RESOURCES end===============########
 
-  resources :articles do
-    resources :comments
+
+  resources :articles do #nested 
+    resources :comments #ito naka depend kay articles
   end
+
+#  resources :comments #para maka comment kahit nasa labas ng Articles, ito stand alone
   
 
   # get '/users' => 'users#index'

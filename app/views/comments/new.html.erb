@@ -1,0 +1,25 @@
+<%= form_with scope: :comment, model: [@article, @comment], locale: true do |f| %>
+
+<div class = "validation_error">
+  <% if @comment.errors.any? %>
+    <ul>
+      <% @comment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <%end%>
+    </ul>
+  <%end%>
+</div>
+
+<div class = "form_title">
+  <th><%= f.label :Title %></th>
+  <th><%= f.text_field :name %></th>
+</div>
+<div class = "form_body">
+  <th><%= f.label :Lyrics%></th>
+  <th><%= f.text_field :body %></th>
+</div>
+
+<div class = "form_button">
+  <%= f.submit :"Add Lyrics" %>
+ </div>
+<% end %>
