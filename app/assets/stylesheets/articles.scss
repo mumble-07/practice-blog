@@ -1,181 +1,181 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+// // Place all the styles related to the articles controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
-$fontT: 'Recursive', sans-serif;
-$fontH: 'Poppins', sans-serif;
-$fontQ: 'Segoe UI', sans-serif;
+// $fontT: 'Recursive', sans-serif;
+// $fontH: 'Poppins', sans-serif;
+// $fontQ: 'Segoe UI', sans-serif;
 
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-image: url('bg3.jpg');
-  background-position: center;
-  background-size: cover;
-}
+// body {
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden;
+//   background-image: url('bg3.jpg');
+//   background-position: center;
+//   background-size: cover;
+// }
 
-.main_banner {
-      display: flex;
-    height: 5vh;
-    margin-bottom: 20px;
-    color: black;
-    font: 150% "Poppins", sans-serif;
-    text-shadow: 3px 3px 5px #928b7f;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-}
+// .main_banner {
+//       display: flex;
+//     height: 5vh;
+//     margin-bottom: 20px;
+//     color: black;
+//     font: 150% "Poppins", sans-serif;
+//     text-shadow: 3px 3px 5px #928b7f;
+//     flex-direction: row;
+//     align-content: center;
+//     align-items: center;
+//     justify-content: space-around;
+// }
 
-  .new_article {
-    text-align: center;
-    justify-content: center;
-    border-radius: 10px;
-    width: 250px;
-    height: 40px;
-    color: black;
-    font: 90% $fontT;
-    text-decoration: none;
-    background-color: antiquewhite;
-  }
+//   .new_article {
+//     text-align: center;
+//     justify-content: center;
+//     border-radius: 10px;
+//     width: 250px;
+//     height: 40px;
+//     color: black;
+//     font: 90% $fontT;
+//     text-decoration: none;
+//     background-color: antiquewhite;
+//   }
 
-.main_container {
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
-  overflow-y:scroll;
-}
+// .main_container {
+//   width: 80vw;
+//   height: 80vh;
+//   margin: 0 auto;
+//   overflow-y:scroll;
+// }
 
-  .header {
-    padding-top: 5vh;
-    color: black;
+//   .header {
+//     padding-top: 5vh;
+//     color: black;
       
-    th {
-      text-align: left;
-      font: 200% $fontT;
-      text-shadow: 3px 3px 5px #928b7f;
-    }
-  }
+//     th {
+//       text-align: left;
+//       font: 200% $fontT;
+//       text-shadow: 3px 3px 5px #928b7f;
+//     }
+//   }
 
-  .label_box {
-     display: flex;
-    width: 50vw;
-    height: 10vh;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-evenly;
-    }
+//   .label_box {
+//      display: flex;
+//     width: 50vw;
+//     height: 10vh;
+//     flex-direction: row;
+//     align-items: baseline;
+//     justify-content: space-evenly;
+//     }
 
-  .buttons {
-    color: black;
-    font: 100% $fontT;
-    text-decoration: none;
-  }
+//   .buttons {
+//     color: black;
+//     font: 100% $fontT;
+//     text-decoration: none;
+//   }
 
-  .id_container {
-    padding-top: 3vh;
-    width: 5vw;
-    font: 25px $fontQ;
+//   .id_container {
+//     padding-top: 3vh;
+//     width: 5vw;
+//     font: 25px $fontQ;
   
-  }
+//   }
 
-  .name_container {
-    padding-top: 5vh;
-    width: 15vw;
-    font: 25px $fontQ;
-  }
+//   .name_container {
+//     padding-top: 5vh;
+//     width: 15vw;
+//     font: 25px $fontQ;
+//   }
 
-  .body_container {
-    width: 50vw;
-    height: 50px;
-    font: 15px $fontQ;
-  }
+//   .body_container {
+//     width: 50vw;
+//     height: 50px;
+//     font: 15px $fontQ;
+//   }
 
-  .show_container {
-    padding-top: 10vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    width: 80vw;
-  }
+//   .show_container {
+//     padding-top: 10vh;
+//     margin: 0 auto;
+//     display: flex;
+//     flex-direction: row;
+//     width: 80vw;
+//   }
 
-    .show_id_container {
-    width: 10vw;
-    font: 30px $fontQ;
+//     .show_id_container {
+//     width: 10vw;
+//     font: 30px $fontQ;
   
-  }
+//   }
 
-  .show_name_container {
-    width: 15vw;
-    font: 30px $fontQ;
-  }
+//   .show_name_container {
+//     width: 15vw;
+//     font: 30px $fontQ;
+//   }
 
-  .show_body_container {
-    width: 60vw;
-    height: 80vh;
-    font: 20px $fontQ;
-  }
+//   .show_body_container {
+//     width: 60vw;
+//     height: 80vh;
+//     font: 20px $fontQ;
+//   }
 
-  .back_button {
-    margin-top: -150px;
-    margin-left: 45vw;
-    color: black;
-    font: 100% $fontT;
-    td {
-    text-decoration: none!important;
-    cursor: pointer;
-    }
-  }
+//   .back_button {
+//     margin-top: -150px;
+//     margin-left: 45vw;
+//     color: black;
+//     font: 100% $fontT;
+//     td {
+//     text-decoration: none!important;
+//     cursor: pointer;
+//     }
+//   }
 
-  .edit_button, 
-  .delete_button, 
-  .show_button {
-    color: black;
-    font: 100% $fontT;
-    td {
-    text-decoration: none!important;
-    cursor: pointer;
-    }
-  }
+//   .edit_button, 
+//   .delete_button, 
+//   .show_button {
+//     color: black;
+//     font: 100% $fontT;
+//     td {
+//     text-decoration: none!important;
+//     cursor: pointer;
+//     }
+//   }
 
-  .form_title {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-  }
-    .form_body {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-bottom: 50px;
-    margin: 0 auto;
-    text-align: center;
-    th {
-      font-size: 100px;
-    }
-  }
+//   .form_title {
+//     display: flex;
+//     flex-direction: column;
+//     width: 50%;
+//     margin: 0 auto;
+//     text-align: center;
+//   }
+//     .form_body {
+//     display: flex;
+//     flex-direction: column;
+//     width: 50%;
+//     margin-bottom: 50px;
+//     margin: 0 auto;
+//     text-align: center;
+//     th {
+//       font-size: 100px;
+//     }
+//   }
 
-      .form_button {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-    margin: 0 auto;
-    text-align: center;
-  }
+//       .form_button {
+//     display: flex;
+//     flex-direction: column;
+//     width: 10%;
+//     margin: 0 auto;
+//     text-align: center;
+//   }
 
-  .validation_error li {
-    text-decoration: none!important;
-    width: 50vw;
-    font: 20px $fontH;
-    margin: 0 auto;
-    text-align: left;
-    text-decoration: none;
-  }
+//   .validation_error li {
+//     text-decoration: none!important;
+//     width: 50vw;
+//     font: 20px $fontH;
+//     margin: 0 auto;
+//     text-align: left;
+//     text-decoration: none;
+//   }

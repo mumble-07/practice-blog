@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # post '/articles' => 'articles#create', as: 'article_create'
   ########========CONVERT TOU RESOURCES end===============########
 
-
+root 'articles#index'
   resources :articles do #nested 
     resources :comments #ito naka depend kay articles
   end
