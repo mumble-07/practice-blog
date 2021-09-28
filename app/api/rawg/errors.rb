@@ -10,8 +10,6 @@ module Rawg
       else
         return 'Service Unavailable. Please try again!'      
       end
-    rescue RestClient::ExceptionWithResponse => err
-      
     end
   end
 end

@@ -23,6 +23,9 @@ root 'articles#index'
   # get '/users' => 'users#index'
   # get '/users/new' => 'users#new', as: 'new_user'
   # post '/users' => 'users#create', as: 'create_user'
+  namespace :api do
+    get '/creator-roles' => 'creator_roles#index'
+  end
 end
 
 
