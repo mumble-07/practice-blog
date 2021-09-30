@@ -1,6 +1,8 @@
-class ArticlesController < ApplicationController
+# frozen_string_literal: true
 
-  def index #index.html.erb
+class ArticlesController < ApplicationController
+  # index.html.erb
+  def index
     @articles = Article.all
   end
 
@@ -44,14 +46,14 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     if @article.destroy
       redirect_to articles_path
-     else
+    else
       render :index
-     end
+    end
   end
 
   private
 
-    def article_params
-      params.require(:article).permit(:name, :body)
-    end
+  def article_params
+    params.require(:article).permit(:name, :body)
+  end
 end

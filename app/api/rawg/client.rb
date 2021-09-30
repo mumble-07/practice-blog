@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Rawg
   class Client
     def self.creator_roles

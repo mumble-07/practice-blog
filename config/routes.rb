@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
@@ -12,13 +14,12 @@ Rails.application.routes.draw do
   # post '/articles' => 'articles#create', as: 'article_create'
   ########========CONVERT TOU RESOURCES end===============########
 
-root 'articles#index'
-  resources :articles do #nested 
-    resources :comments #ito naka depend kay articles
+  root 'articles#index'
+  resources :articles do # nested
+    resources :comments # ito naka depend kay articles
   end
 
-#  resources :comments #para maka comment kahit nasa labas ng Articles, ito stand alone
-  
+  #  resources :comments #para maka comment kahit nasa labas ng Articles, ito stand alone
 
   # get '/users' => 'users#index'
   # get '/users/new' => 'users#new', as: 'new_user'
@@ -27,6 +28,3 @@ root 'articles#index'
     get '/creator-roles' => 'creator_roles#index'
   end
 end
-
-
-
